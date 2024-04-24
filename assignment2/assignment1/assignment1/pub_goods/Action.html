@@ -1,0 +1,20 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Public Goods Demo -- Contribution
+{% endblock %}
+
+{% block content %}
+    <br><br>
+    Round {{ subsession.round_number }} of {{ Constants.num_rounds }}.
+    <br><br>
+    Your endowment is {{ Constants.endowment }}
+    <br><br>
+    The group MPCR is {{ group.MPCR }}
+    <br><br>
+
+    {% formfields %}
+    {% next_button %}
+
+{% endblock %}

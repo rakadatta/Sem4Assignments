@@ -1,0 +1,18 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Public Goods Demo -- Results
+{% endblock %}
+
+{% block content %}
+    You contributed: {{ player.contribution }}.
+    <br><br>
+    In this round you earned: {{ player.participant.payoff }}.
+    <br><br>
+    Your total earning so far: {{ player.participant.vars.totalEarnings }}
+    <br><br>
+    {% next_button %}
+{% endblock %}
+
+
